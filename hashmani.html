@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            background: #750b20;
+            display: flex;
+            align-items: center;
+
+        }
+
+        header ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .menu li {
+            list-style: none;
+            padding: 10px;
+            margin-left: 30px;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        #logo {
+            margin: 0 auto;
+            color: white;
+            font-size: 15px;
+        }
+
+        header li {
+            color: white;
+        }
+
+        .social-logo ul {
+            display: flex;
+            list-style: none;
+
+
+
+        }
+
+        .social-logo img {
+            width: 40px;
+            height: 40px;
+            padding: 10px;
+
+        }
+
+
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-box {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 32%;
+            max-width: 300px;
+        }
+        .service-box img {
+            border: 1px solid gray;
+            flex-basis: 32%;
+            width:  300px;
+            height: 250px;
+            padding: 10px;
+        }
+        .service-box h3 {
+            margin: 5px 0 10px 0;
+        }
+        .service-box p {
+            margin: 0 0 10px;
+        }
+        #main {
+            display: flex;
+        }
+        aside {
+            flex: 0 0 20vw;
+            background: khaki;
+        }
+        aside ul {
+            list-style: none;
+            padding: 0px;
+        }
+        aside ul li {
+            color:  #750b20;
+            padding: 10px;
+            display: block;
+            border-bottom: 1px solid gray;
+        }
+        aside img {
+            width: 100%;
+            height: 300px
+        }
+        footer {
+            background: #750b20;
+            color: white;
+            text-align: center;
+            padding: 15px 0px;             
+        }
+        article {
+            padding: 10px;
+        }
+        .button-1 {
+            background: gray;
+            color: white;
+            padding: 8px 15px;
+            width: 100px;
+            margin-top: auto;
+            align-self: flex-start;
+            display: flex;
+        }
+       
+       @media screen and (max-width: 1248px ) {
+        .service-box {
+            flex-basis: 50%;
+            padding: 15px;
+
+        }
+        aside {
+            flex: 0 0 30vw;
+           
+        }
+       }
+       @media screen and (max-width: 600px){
+          header {
+               flex-direction: column;
+           }
+           #logo {
+               order: -1;
+           }
+           article {
+               order: -1;
+           }
+           #main {
+               flex-direction: column;
+           }
+           .service-box {
+               flex-direction: column;
+               align-items: center;
+           }
+           h2 {
+               text-align: center;
+           }
+          
+       }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </nav>
+        <div id="logo">
+            <h1>Hashmani</h1>
+        </div>
+        <div class="social-logo">
+            <ul>
+                <li><img src="images/facebook.jpg"></li>
+                <li><img src="images/twitter.jpg"></li>
+            </ul>
+        </div>
+    </header>
+    <div id="main">
+        <aside class="">
+            <ul>
+                <li>link</li>
+                <li>link 2</li>
+                <li>link 3</li>
+                <li>link 4</li>
+                <li>link 5</li>
+            </ul>
+            <img src="images/background-image.jpg" alt="">
+        </aside>
+        <article class="">
+            <h2>wel come</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa expedita eos voluptas libero quasi sunt
+                sequi quis dicta nisi eveniet dolores error, veniam nostrum, similique distinctio, a ab itaque laborum?
+            </p>
+            <h2>Our Service</h2>
+            <div class="service-container">
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="images/product1.jpg" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Our Product</h3>
+                    </div>
+                    <div class="service-desc">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat expedita quam recusandae distinctio mollitia voluptatem, dolorum fuga itaque ipsam!</p>
+                    </div>
+                    <div class="button-1">
+                        <a href="">our product</a>
+                    </div>
+
+
+                </div>
+
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="images/images (1).jpg" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Our Product</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                    </div>
+                    <div class="button-1">
+                        <a href="">our product</a>
+                    </div>
+                </div>
+    
+                <div class="service-box">
+                    <div class="service-img">
+                        <img src="images/images (5).jpg" alt="">
+                    </div>
+                    <div class="service-title">
+                        <h3>Our Product</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                    </div>
+                    <div class="button-1">
+                        <a href="">our product</a>
+                    </div>
+                </div>
+    
+            </div>
+        </article>
+
+    </div>
+    <footer>
+        made by sohail baba
+    </footer>
+</body>
+
+</html>
