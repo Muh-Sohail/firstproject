@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        header {
+            display: flex;
+            background: chocolate;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .nav-menu ul {
+            display: flex;
+        }
+
+        .nav-menu ul li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        #logo {
+            margin: 0 auto;
+        }
+
+        .social-logo ul {
+            display: flex;
+        }
+
+        .social-logo ul li {
+            list-style: none;
+        }
+
+        .social-logo ul li img {
+            height: 30px;
+            width: 30px;
+            padding: 10px;
+        }
+
+        .img-1 img {
+            height: 300px;
+            width: 300px;
+
+
+        }
+
+        .container-img {
+            display: flex;
+            flex: 1;
+            justify-content: space-around;
+
+
+        }
+
+        .container-img h2 {
+            text-align: center;
+        }
+
+        .container-img p {
+            text-align: center;
+
+        }
+
+        #main img {
+            height: 400px;
+            width: 250px;
+
+
+        }
+        aside img{
+            flex: 0 0 20vw;
+            background: grey;
+            width: 300px;
+            height: 350px;
+        }
+        .welcom 
+        {
+            display: flex;
+        
+
+        }
+  
+        @media screen and (max-width:1120px) {
+            .container-img {
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            header {
+                flex-direction: column;
+            }
+
+            #logo {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav-menu">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+
+            </ul>
+        </div>
+        <div class="" id="logo">
+            <h1>Hashmani</h1>
+        </div>
+        <div class="social-logo">
+            <ul>
+                <li><img src="images/facebook.jpg" alt=""></li>
+                <li><img src="images/twitter.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <br>
+    
+    <div class="container-img">
+        <aside >
+            <ul>
+                <li><a href="">Our Product </a></li>
+                <li><a href="">Your Style</a></li>
+                <li><a href="">Location </a></li>
+            </ul>
+            <img src="images/background-image.jpg" alt="">
+        </aside>
+        <div class="welcom">
+            <h2>wel come</h2>
+        </div>   
+            <br>
+                <div class="img-1">
+                    <img src="images/images (1).jpg" alt="">
+                    <h2>Product</h2>
+                    <p>600<s>7000</s></p>
+                </div>
+                <div class="img-1">
+                    <img src="images/images (2).jpg" alt="">
+                    <h2>style</h2>
+                    <p>500<s>600</s></p>
+                </div>
+                <div class="img-1">
+                    <img src="images/images (3).jpg" alt="">
+                    <h2>procut</h2>
+                    <p>800<s>500</s></p>
+                </div>
+       
+        <br>
+    </div>
+
+
+
+
+</body>
+
+</html>
